@@ -4,6 +4,8 @@
 
 using namespace std;
 
+// version 0.6
+
 void restart();
 
 void printLogo()
