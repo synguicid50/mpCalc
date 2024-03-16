@@ -9,7 +9,7 @@ A multipurpose console application for calculating various mathematical operatio
 -Factorial //done
 -Exponentiation //done
 -nth Root
--Logarithm
+-Logarithm/Natural log
 -Trig. functions
 -Integral
 -Area
