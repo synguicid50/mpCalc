@@ -20,3 +20,4 @@ A multipurpose console application for calculating various mathematical operatio
 -Error approximation
 -Matrix operations
 -Matrix inversion
+-Quaternion operations
