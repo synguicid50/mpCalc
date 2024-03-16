@@ -21,3 +21,5 @@ A multipurpose console application for calculating various mathematical operatio
 -Matrix operations
 -Matrix inversion
 -Quaternion operations
+
+-Add language support
