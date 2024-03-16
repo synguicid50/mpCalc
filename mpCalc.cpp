@@ -125,11 +125,11 @@ int main()
 
 void restart()
 {
-    cout << "Type 'c' to clear or 'm' to go to menu" << endl;
+    cout << "Type 'c' to clear or 'm' to go to menu" << endl; // press [ESC] for menu
     string restartInput;
     cin >> restartInput;
 
-    if (restartInput == "r")
+    if (restartInput == "c") // clear on "c"
     {
         system("CLS");
         main();
