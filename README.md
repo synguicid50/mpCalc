@@ -12,7 +12,7 @@ A multipurpose console application for calculating various mathematical operatio
 -Logarithm/Natural log
 -Trig. functions
 -Integral
--Area(polygons, circle and ellips)
+-Area(polygons, circle and ellips) //triangles are done(this was harder than I thought)
 -Volume
 -Convergence test
 -Approximation(Newton's method)
