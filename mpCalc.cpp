@@ -12,7 +12,7 @@ void printLogo()
 {
     string line = "";
     ifstream infile;
-    // infile.open("mpcalc-ascii-speed.txt");
+    // infile.open("mpcalc-ascii-speed.txt"); //alternative logo
     infile.open("mpcalc-ascii-alligator2.txt");
     if (infile.is_open())
     {
@@ -83,6 +83,22 @@ void root()
     cout << "       WIP" << endl;
     double result;
 }
+
+void area()
+{
+    cout << "       Calculate the area of a polygon with n sides. \n       Choose n:" << endl;
+    int n;
+    cin >> n;
+}
+
+// area functions start
+
+void areaTri()
+{
+}
+
+// area functions end
+
 int main()
 {
     printLogo();
@@ -125,13 +141,13 @@ int main()
 
 void restart()
 {
-    cout << "Type 'c' to clear or 'm' to go to menu" << endl; // press [ESC] for menu
+    cout << "Type 'c' to clear or 'm' to go to menu" << endl; // todo press [ESC] for menu
     string restartInput;
     cin >> restartInput;
 
-    if (restartInput == "c") // clear on "c"
+    if (restartInput == "c") // todo restart the function on "c"
     {
-        system("CLS");
+        system("CLS"); // apparently this only works in windows or so I've been told
         main();
     }
     else if (restartInput == "m")
