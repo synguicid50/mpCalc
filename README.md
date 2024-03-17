@@ -2,7 +2,7 @@
 
 A multipurpose console application for calculating various mathematical operations.
 
-//These are just a list of possible features, this project will probably be discontinued before I implement integrals.
+//These are just a list of possible features, this project will probably be discontinued after a few more operations
 
 -Basic calculator
 -Gauss sum //done
@@ -11,7 +11,6 @@ A multipurpose console application for calculating various mathematical operatio
 -nth Root
 -Logarithm/Natural log
 -Trig. functions
--Integral
 -Area(polygons, circle and ellips) //triangles are done
 -Volume
 -Convergence test
