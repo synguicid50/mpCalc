@@ -21,5 +21,7 @@ A multipurpose console application for calculating various mathematical operatio
 -Matrix operations
 -Matrix inversion
 -Quaternion operations
+-Prime number calculator
+-Coprime calculator
 
 -Add language support
