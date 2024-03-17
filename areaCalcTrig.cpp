@@ -4,13 +4,14 @@
 
 using namespace std;
 
-// only for calculating the area of a triangle
-string startMessage = "\n\tIn order to calculate the area of a triangle, you must type in 3 distinct values."
-                      "\n\n\t 1) 3 edges\n\t 2) 2 edges - 1 angle\n\t 3) 1 side - 2 angles\n\n\tChoose: ";
-
 int main()
 {
-    cout << startMessage;
+    // ::IMPORTANT:: As of version 0.6 this function is ported into mpCalc.cpp and is only in the repository for storage purposes
+
+    // only for calculating the area of a triangle
+    // TODO implement radians
+    cout << "\n\tIn order to calculate the area of a triangle, you must type in 3 distinct values."
+            "\n\n\t 1) 3 edges\n\t 2) 2 edges - 1 angle\n\t 3) 1 side - 2 angles\n\n\tChoose: ";
     int functionId;
     cin >> functionId;
 
@@ -39,7 +40,7 @@ startOver:
 
         double s = (edge1 + edge2 + edge3) / 2;
 
-        double area = sqrt(s * (s - edge1) * (s - edge2) * (s - edge3));
+        double area = sqrt(s * (s - edge1) * (s - edge2) * (s - edge3)); // using s formula
 
         cout << "\n\tThe area of the triangle: " << area << endl;
     }
@@ -57,7 +58,7 @@ startOver:
         double edge2;
         cin >> edge2;
 
-        cout << "\tThe angle between the two edges(in degrees): "; // implement radians
+        cout << "\tThe angle between the two edges(in degrees): ";
     invalidAngle:
         double angleDeg;
         cin >> angleDeg;
@@ -66,13 +67,13 @@ startOver:
 
         if (angleDeg > 0 && angleDeg < 180)
         {
-            double area = (edge1 * edge2 * sin(angleRad) / 2);
+            double area = (edge1 * edge2 * sin(angleRad) / 2); // sin area formula
             cout << "\n\tThe area of the triangle: " << area << endl;
         }
         else
         {
             system("CLS");
-            cout << "\t" << angleDeg << " degrees, huh? Are you sure about that?" // after a certain amount of times, redirect to https://en.wikipedia.org/wiki/Triangle
+            cout << "\t" << angleDeg << " degrees, huh? Are you sure about that?" // TODO after a certain amount of times, redirect to https://en.wikipedia.org/wiki/Triangle
                  << "\n\n\tThe angle between the two edges(in degrees): ";
             goto invalidAngle;
         }
@@ -84,7 +85,7 @@ startOver:
 
         cout << "\tEnter the values." << endl;
     invalidAngle1:
-        cout << "\n\tThe first angle(in degrees): "; // implement radians
+        cout << "\n\tThe first angle(in degrees): ";
         double angleDeg1;
         cin >> angleDeg1;
 
@@ -92,7 +93,7 @@ startOver:
 
         if (angleDeg1 > 0 && angleDeg1 < 180)
         {
-            cout << "\tThe second angle(in degrees): "; // implement radians
+            cout << "\tThe second angle(in degrees): ";
             double angleDeg2;
             cin >> angleDeg2;
             double angleRad2 = angleDeg2 * 3.141592 / 180;
