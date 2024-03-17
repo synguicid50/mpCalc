@@ -32,7 +32,7 @@ void calculator()
 
 void gauss()
 {
-    cout << "\tGauss sum is the sum of all positive integers up to a number n. \n\tPlease choose the number n:" << endl;
+    cout << "\tGauss sum is the sum of all positive integers up to a number n. \n\tPlease choose the number n: ";
     int n;
     cin >> n;
     double result = n * (n + 1) / 2;
@@ -44,7 +44,7 @@ void factorial()
     int n;
     int result = 1;
     cout << "\tThe factorial of a positive integer n is the product of all the positive integers less than or equal to n."
-         << "\n\n\tPlease choose the number n : " << endl;
+         << "\n\n\tPlease choose the number n: ";
     cin >>
         n;
     for (int i = 1; i <= n; i++)
@@ -60,9 +60,9 @@ void expo()
     int exponent; // make double
     double result = 1;
 
-    cout << "\tPlease choose the base number:";
+    cout << "\tPlease choose the base number: ";
     cin >> base;
-    cout << "\tPlease choose the exponent:";
+    cout << "\tPlease choose the exponent: ";
     cin >> exponent;
 
     if (base == 0)
