@@ -257,6 +257,9 @@ int main()
     cout << "\tChoose function: \n\n\t1) [reserved for Calculator] \n\t2) Gauss sum "
          << "\n\t3) Factorial \n\t4) Exponentiation \n\t5) [reserved for nth Root]"
          << "\n\t6) Area (Only for triangles)" << endl;
+
+    cout << "\n\tChoose function: ";
+
     int functionId;
     cin >> functionId;
 
